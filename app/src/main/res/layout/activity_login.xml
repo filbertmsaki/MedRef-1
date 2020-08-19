@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/logintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="LOGIN"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/usernamedata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordtext"
+        app:layout_constraintEnd_toStartOf="@+id/usernamedata"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logintext"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <EditText
+        android:id="@+id/usernamedata"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/passworddata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usertext"
+        app:layout_constraintTop_toBottomOf="@+id/logintext"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/passwordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Password"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/passworddata"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usertext" />
+
+    <EditText
+        android:id="@+id/passworddata"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/passwordtext"
+        app:layout_constraintTop_toBottomOf="@+id/usernamedata" />
+
+    <Button
+        android:id="@+id/clearbtn"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:text="Clear"
+        app:layout_constraintBottom_toTopOf="@+id/registertext"
+        app:layout_constraintEnd_toStartOf="@+id/loginbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtext"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/registerbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toEndOf="@+id/clearbtn"
+        app:layout_constraintTop_toBottomOf="@+id/passworddata"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/registertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Registered..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/registerbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clearbtn" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Register here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/registertext"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

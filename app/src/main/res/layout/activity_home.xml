@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/front_img"
+    tools:context=".Home">
+    <LinearLayout
+        android:id="@+id/top_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_txt"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Medical Reference"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/second_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_linear"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/bmi_btn"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            android:text="BMI Calculator"
+            android:background="@drawable/btn_bg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/diet_btn"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            android:text="Food and Diet"
+            android:background="@drawable/btn_bg"
+            android:layout_marginRight="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/third_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_linear"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/fitness_btn"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            android:text="Fitness"
+            android:background="@drawable/btn_bg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"/>
+        <Button
+            android:id="@+id/profile_btn"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            android:text="Profile"
+            android:background="@drawable/btn_bg"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

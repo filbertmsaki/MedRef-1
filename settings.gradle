@@ -1,0 +1,6 @@
+include ':httpmime-4.5.12'
+include ':httpcore-4.4.13'
+include ':httpclient-4.5.12'
+include ':mysql-connector-java-8.0.21'
+include ':app'
+rootProject.name = "MedRef"
