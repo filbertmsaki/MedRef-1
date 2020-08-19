@@ -55,7 +55,7 @@
             return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
         }
         
-        public function createNewRegisterUser($username, $email, $password, $city, $phone){
+        public function createNewRegisterUser($username, $email, $password){
               
             $isExisting = $this->isEmailUsernameExist($username, $email);
             
@@ -71,7 +71,7 @@
                 
                 if($isValid)
                 {
-                $query = "insert into ".$this->db_table." (username, email, password, city, phone, created_at, updated_at) values ('$username', '$email','$password','$city','$phone', NOW(), NOW())";
+                $query = "insert into ".$this->db_table." (username, email, password, created_at, updated_at) values ('$username', '$email','$password', NOW(), NOW())";
                 
                 $inserted = mysqli_query($this->db->getDb(), $query);
                 

@@ -26,27 +26,37 @@
         
     }
 
-    if(isset($_POST['city'])){
+    // if(isset($_POST['city'])){
         
-        $email = $_POST['city'];
+    //     $email = $_POST['city'];
         
-    }
+    // }
 
-    if(isset($_POST['phone'])){
+    // if(isset($_POST['phone'])){
         
-        $email = $_POST['phone'];
+    //     $email = $_POST['phone'];
         
-    }
+    // }
     
     $userObject = new User();
     
     // Registration
     
-    if(!empty($username) && !empty($email) && !empty($password) && !empty($city) && !empty($phone)){
+    // if(!empty($username) && !empty($email) && !empty($password) && !empty($city) && !empty($phone)){
+        
+    //     $hashed_password = md5($password);
+        
+    //     $json_registration = $userObject->createNewRegisterUser($username, $email, $hashed_password, $city, $phone);
+        
+    //     echo json_encode($json_registration);
+        
+    // }
+
+     if(!empty($username) && !empty($email) && !empty($password) ){
         
         $hashed_password = md5($password);
         
-        $json_registration = $userObject->createNewRegisterUser($username, $email, $hashed_password, $city, $phone);
+        $json_registration = $userObject->createNewRegisterUser($username, $email, $hashed_password);
         
         echo json_encode($json_registration);
         
